@@ -10,9 +10,9 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 public class Response {
 
-    HttpStatus status;
-    int code;
-    String description;
+    private HttpStatus status;
+    private int code;
+    private String description;
 
     public static Response getSuccessResponse(String message) {
         return new Response(HttpStatus.OK, HttpStatus.OK.value(), message);
